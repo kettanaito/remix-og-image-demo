@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^8.4.38
     version: 8.4.49
   remix-og-image:
-    specifier: ^0.4.3
-    version: 0.4.3(@remix-run/dev@2.14.0)(typescript@5.6.3)(vite@5.4.11)
+    specifier: ^0.4.4
+    version: 0.4.4(@remix-run/dev@2.14.0)(typescript@5.6.3)(vite@5.4.11)
   tailwindcss:
     specifier: ^3.4.4
     version: 3.4.15
@@ -5991,8 +5991,8 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /remix-og-image@0.4.3(@remix-run/dev@2.14.0)(typescript@5.6.3)(vite@5.4.11):
-    resolution: {integrity: sha512-Yxzds9Cmp4UECnbKpuMVORr5rWZXITUrwvyhMxU9NmMQfuuJ8cTIe4v8E3jzE08e2AdOOPj+BZPeyvr32j8eDA==}
+  /remix-og-image@0.4.4(@remix-run/dev@2.14.0)(typescript@5.6.3)(vite@5.4.11):
+    resolution: {integrity: sha512-2fd1xCwNVyr3nwViExIap4wkV5q7ZbM9QuvqM39T4Fc4grspN9ubdrC38tXxUvOKQPZ4jnsPBdozBRJcS2RKUQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       '@remix-run/dev': ^2.0.0
