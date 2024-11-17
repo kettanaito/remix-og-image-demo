@@ -1,0 +1,10 @@
+{
+  "my-first-post": {
+    "title": "My First Post",
+    "description": "First post description."
+  },
+  "another-post": {
+    "title": "Another Post",
+    "description": "Second post description."
+  }
+}
