@@ -1,4 +1,4 @@
-import { LoaderFunctionArgs, redirect } from '@remix-run/node'
+import { LoaderFunctionArgs, MetaFunction, redirect } from '@remix-run/node'
 import { Link, useLoaderData } from '@remix-run/react'
 import allData from '~/data.json'
 import { getDataById } from '~/utils/get-data-by-id'
@@ -15,6 +15,15 @@ export function loader({ params }: LoaderFunctionArgs) {
   return {
     data,
   }
+}
+
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
+  return [
+    {
+      name: 'og:image',
+      content: `/og/${data}.webp`,
+    },
+  ]
 }
 
 export default function DynamicPage() {
