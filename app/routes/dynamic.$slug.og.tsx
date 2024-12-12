@@ -1,4 +1,4 @@
-import { LoaderFunctionArgs, redirect } from '@remix-run/node'
+import { LoaderFunctionArgs, MetaFunction, redirect } from '@remix-run/node'
 import { Link, useLoaderData } from '@remix-run/react'
 import { isOpenGraphImageRequest, OpenGraphImageData } from 'remix-og-image'
 import { getDataById } from '~/utils/get-data-by-id'
@@ -30,6 +30,14 @@ export async function loader({ params, request }: LoaderFunctionArgs) {
     slug,
     data,
   }
+}
+
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
+  return [
+    {
+      title: `${data.data.title} - Open Graph Image`,
+    },
+  ]
 }
 
 export default function DynamicRouteOpenGraphImage() {
